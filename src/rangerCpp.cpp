@@ -182,6 +182,13 @@ Rcpp::List rangerCpp(uint treetype, Rcpp::NumericMatrix& input_x, Rcpp::NumericM
         temp.loadForest(num_trees, child_nodeIDs, split_varIDs, split_values, class_values,
             terminal_class_counts, is_ordered);
       }
+        if (treetype == TREE_CLASSIFICATION && !class_weights.empty()) {
+        auto& temp = dynamic_cast<ForestClassification&>(*forest);
+        temp.setClassWeights(class_weights);
+      } else if (treetype == TREE_PROBABILITY && !class_weights.empty()) {
+        auto& temp = dynamic_cast<ForestProbability&>(*forest);
+        temp.setClassWeights(class_weights);
+      }
     } else {
       // Set class weights
       if (treetype == TREE_CLASSIFICATION && !class_weights.empty()) {
