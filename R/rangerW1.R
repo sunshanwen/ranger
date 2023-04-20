@@ -16,7 +16,7 @@
 # along with Ranger. If not, see <http://www.gnu.org/licenses/>.
 #
 # Written by:
-#
+#   
 #   Marvin N. Wright
 # Institut fuer Medizinische Biometrie und Statistik
 # Universitaet zu Luebeck
@@ -26,6 +26,7 @@
 #
 # http://www.imbs-luebeck.de
 # -------------------------------------------------------------------------------
+# This was added by Shanwen Sun
 
 ##' Ranger is a fast implementation of random forests (Breiman 2001) or recursive partitioning, particularly suited for high dimensional data.
 ##' Classification, regression, and survival forests are supported.
