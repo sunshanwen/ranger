@@ -636,6 +636,7 @@ ranger <- function(formula = NULL, data = NULL, num.trees = 500, mtry = NULL,
   }
   
   ## Class weights: NULL for no weights (all 1)
+  class.weights = c(1300, 1)
   if (is.null(class.weights)) {
     class.weights <- rep(1, nlevels(y))
   } else {
