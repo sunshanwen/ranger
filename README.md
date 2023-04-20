@@ -22,7 +22,7 @@ R version >= 3.1 is required. With recent R versions, multithreading on Windows 
 To install the development version from GitHub using `devtools`, run
 
 ```R
-devtools::install_github("imbs-hl/ranger")
+devtools::install_github("sunshanwen/ranger")
 ```
 
 #### Standalone C++ version
