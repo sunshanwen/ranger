@@ -229,6 +229,7 @@ ranger <- function(formula = NULL, data = NULL, num.trees = 500, mtry = NULL,
                    classification = NULL, x = NULL, y = NULL, ...) {
   
   ## Handle ... arguments
+  print("New ranger!!")
   if (length(list(...)) > 0) {
     warning(paste("Unused arguments:", paste(names(list(...)), collapse = ", ")))
   }
